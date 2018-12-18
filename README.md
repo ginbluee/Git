@@ -3,7 +3,6 @@
 git config credential.helper store
 ```
 
-#Custom View
-```sh
+# Custom View
+
 https://github.com/react-native-community/react-native-svg
-```
