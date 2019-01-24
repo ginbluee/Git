@@ -23,3 +23,7 @@ https://github.com/react-native-community/react-native-svg
     y: -HEADER_MAX_HEIGHT,
   }}
 ```
+# Dynamically changing number of columns in React Native Flat List
+```
+key={(this.state.horizontal ? 'h' : 'v')}
+```
