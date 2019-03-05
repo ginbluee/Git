@@ -27,3 +27,8 @@ https://github.com/react-native-community/react-native-svg
 ```
 key={(this.state.horizontal ? 'h' : 'v')}
 ```
+# Snap Slider
+
+```
+https://www.npmjs.com/package/react-native-snap-slider
+```
