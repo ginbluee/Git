@@ -32,3 +32,8 @@ key={(this.state.horizontal ? 'h' : 'v')}
 ```
 https://www.npmjs.com/package/react-native-snap-slider
 ```
+
+# com.github.facebook.watchman.plist for write: Permission denied
+```
+sudo chown -R $(username):staff ~/Library/LaunchAgents
+```
