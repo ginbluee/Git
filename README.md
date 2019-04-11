@@ -55,3 +55,12 @@ sudo chown -R $(username):staff ~/Library/LaunchAgents
     }
 ```
 
+# Could not find iPhone 6 simulator
+```
+version.startsWith('com.apple.CoreSimulator.SimRuntime.iOS') && !version.startsWith('com.apple.CoreSimulator.SimRuntime.tvOS')
+```
+or
+```
+if (!version.includes('iOS') && !version.includes('tvOS'))
+```
+
