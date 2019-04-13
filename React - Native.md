@@ -64,6 +64,12 @@ or
 if (!version.includes('iOS') && !version.includes('tvOS'))
 ```
 # "config.h" not found
+```
+1. Close Xcode.
+2. Open Terminal, go to your project's root folder and run: cd node_modules/react-native/third-party/glog-0.3.4/
+3. Run the configure script: ./configure
+4. Open Xcode and try to run your app.
+```
 
 # "Build archive error vs Xcode10"
 ```
