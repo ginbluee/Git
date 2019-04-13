@@ -90,3 +90,8 @@ installer.pods_project.targets.each do |target|
     end
   end
 ```
+
+# Testflight
+```
+https://www.raywenderlich.com/5352-testflight-tutorial-ios-beta-testing
+```
