@@ -63,4 +63,24 @@ or
 ```
 if (!version.includes('iOS') && !version.includes('tvOS'))
 ```
+# "config.h" not found
 
+# "Build archive error vs Xcode10"
+```
+Multiple commands produce '/Users/tu/Library/Developer/Xcode/DerivedData/Tituk-fndmfujccqhdareyswrxhslqzyvn/Build/Intermediates.noindex/ArchiveIntermediates/Tituk/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/libyoga.a':
+
+Target 'yoga' has a command with output '/Users/tu/Library/Developer/Xcode/DerivedData/Tituk-fndmfujccqhdareyswrxhslqzyvn/Build/Intermediates.noindex/ArchiveIntermediates/Tituk/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/libyoga.a'
+Target 'yoga' has a command with output '/Users/tu/Library/Developer/Xcode/DerivedData/Tituk-fndmfujccqhdareyswrxhslqzyvn/Build/Intermediates.noindex/ArchiveIntermediates/Tituk/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/libyoga.a'
+```
+```
+fix
+installer.pods_project.targets.each do |target|
+    if target.name == "React"
+      target.remove_from_project
+    end
+
+    if target.name == "yoga"
+      target.remove_from_project
+    end
+  end
+```
