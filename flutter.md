@@ -9,7 +9,7 @@ Clipboard.getData('text/plain').then((results) {
   print(results.text);
 });
 ```
-#The getter 'alertDialogLabel' was called on null
+# The getter 'alertDialogLabel' was called on null
 
 I've found a solution to the problem, had to add fallback to localizationsDelegates, as follows:
 
